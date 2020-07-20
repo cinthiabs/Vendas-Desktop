@@ -1,0 +1,12 @@
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\bin\Debug\FrmLogin.exe.config
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\bin\Debug\FrmLogin.exe
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\bin\Debug\FrmLogin.pdb
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\obj\Debug\FrmLogin.csprojAssemblyReference.cache
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\obj\Debug\FrmLogin.FrmLogin.resources
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\obj\Debug\FrmLogin.FrmCadastro.resources
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\obj\Debug\FrmLogin.FrmHome.resources
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\obj\Debug\FrmLogin.Properties.Resources.resources
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\obj\Debug\FrmLogin.csproj.GenerateResource.cache
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\obj\Debug\FrmLogin.csproj.CoreCompileInputs.cache
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\obj\Debug\FrmLogin.exe
+C:\Users\cinth\Desktop\FrmLogin\FrmLogin\obj\Debug\FrmLogin.pdb
