@@ -17,6 +17,8 @@ namespace FrmLogin
         {
             InitializeComponent();
         }
+        //banco 
+        SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
@@ -71,7 +73,6 @@ namespace FrmLogin
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
             SqlCommand comando = new SqlCommand("SELECT * FROM produto WHERE cod=@cod", banco);
 
             comando.Parameters.Add("@cod", SqlDbType.VarChar).Value = txtcodigo.Text;
@@ -116,7 +117,6 @@ namespace FrmLogin
         {
             string SQL = "SELECT * FROM venda";
 
-            SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
             SqlCommand sqlCommand = null;
             sqlCommand = new SqlCommand(SQL, banco);
 
@@ -194,7 +194,7 @@ namespace FrmLogin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
+           
             SqlCommand comando = new SqlCommand("insert into venda(clienteDocumento, clienteNome, obs, dataHora)values(@clienteDocumento, @clienteNome, @obs, @dataHora)", banco);
 
             comando.Parameters.Add("@clienteDocumento", SqlDbType.VarChar).Value = txtcpf.Text;
@@ -226,7 +226,6 @@ namespace FrmLogin
 
         private void btnfinalizar_Click(object sender, EventArgs e)
         {
-            SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
             SqlCommand comando = new SqlCommand("insert into venda_produto(codVenda, codProduto, precoVenda, quantidade, total)values(@codvenda, @codProduto, @precoVenda, @quantidade, @total)", banco);
 
 

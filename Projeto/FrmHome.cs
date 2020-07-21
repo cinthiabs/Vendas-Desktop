@@ -17,6 +17,8 @@ namespace FrmLogin
         {
             InitializeComponent();
         }
+        //banco
+        SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
 
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -103,7 +105,6 @@ namespace FrmLogin
         }
         public void RegistroProduto()
         {
-            SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
             SqlCommand sqlCommand = new SqlCommand("SELECT COUNT(*) FROM produto", banco);
 
             banco.Open();
@@ -112,7 +113,6 @@ namespace FrmLogin
         }
         public void RegistroVenda()
         {
-            SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
             SqlCommand sqlCommand = new SqlCommand("SELECT COUNT(*) FROM venda_produto", banco);
 
             banco.Open();
@@ -122,7 +122,6 @@ namespace FrmLogin
 
         public void Totalvendas()
         {
-            SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
             SqlCommand sqlCommand = new SqlCommand("SELECT SUM(total)FROM venda_produto", banco);
           
             banco.Open();

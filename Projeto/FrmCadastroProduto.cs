@@ -17,6 +17,9 @@ namespace FrmLogin
         {
             InitializeComponent();
         }
+        //banco
+        SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -91,7 +94,6 @@ namespace FrmLogin
         {
             string SQL = "SELECT * FROM produto";
 
-            SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
             SqlCommand sqlCommand = null;
             sqlCommand = new SqlCommand(SQL, banco);
 
@@ -115,7 +117,6 @@ namespace FrmLogin
         private void btncadastrar_Click(object sender, EventArgs e)
         {
             //banco
-            SqlConnection banco = new SqlConnection("Data Source=DESKTOP-7VCU04E;Initial Catalog=Projeto;Integrated Security=True");
             SqlCommand comando = new SqlCommand("insert into produto (descricao, grupo, codBarra, unidadeMedida, precoCusto, precoVenda, dataHoraCadastro, ativo)values(@descricao, @grupo, @codBarra, @unidadeMedida, @precoCusto, @precoVenda, @dataHoraCadastro, @ativo)", banco);
                //converter
             decimal venda = Convert.ToDecimal(txtPrecovenda.Text);
